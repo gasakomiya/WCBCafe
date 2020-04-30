@@ -247,6 +247,74 @@ aside p{
  }
 
 
+
+ /*CONTACT
+ ------------------------------*/
+ #contact{
+   background-image:url(../images/contact-bg.jpg);
+   min-height:100vh;
+ }
+
+/*フォーム*/
+form div{
+  margin-bottom:14px;
+}
+label{
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea{
+  background: rgba(255, 255, 255, 5);
+  border:1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+/* 店舗情報・地図 */
+#location{
+  padding: 4% 0
+}
+#location .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.location-info{
+  width: 22%;
+}
+.location-info p{padding: 12px 10px;
+}
+
+.location-map{
+  width: 74%
+}
+
+/* iframe */
+iframe{
+  width: 100%
+}
+
+/* #sns */
+#sns{background: #FAF7F0;
+padding: 4% 0;
+}
+#sns .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title{
+  margin-bottom: 30px
+}
+.sns-box{
+  width: 30%;
+}
+
 /*モバイル版
 --------------------------------*/
 
@@ -325,8 +393,37 @@ aside p{
 
 
 
+/* CONTACT */
+
+#contact .page-title{
+  margin-top:40px;
+}
+
+
+/* フォーム */
+input[type="text"],
+input[type="e-mail"],
+
+textarea{
+  max-width: 100%;
+}
 
 
 
+/* 店舗情報・地図/sns */
+
+#location .wrapper,
+#sns .wrapper{
+  flex-direction: column;
+}
+.location-info,
+.location-map,
+.sns-box{
+  width: 100%
+}
+
+.sns-box{
+  margin-bottom: 30px;
+}
 
 }
